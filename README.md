@@ -282,7 +282,7 @@ Le projet se poursuit avec le stockage distribué, les traitements Batch et Stre
 
 ## 👥 Équipe
 
-Projet académique réalisé par une équipe de **3 étudiants** : Chaimae Blouaid/ Hassna ELbahmani/ Meryem Chamali .
+Projet académique réalisé par une équipe de **3 étudiants** : Chaimae Boulaid/ Hassna ELbahmani/ Meryem Chamlali .
 
 ## 📚 Source des données
 
