@@ -28,6 +28,7 @@ Les principaux objectifs de FireWatch sont :
 ## 🏗️ Architecture globale
 
 FireWatch repose sur une architecture Big Data distribuée organisée en plusieurs couches complémentaires.
+![Architecture globale](docs/architecture%20fonctionnelle%20globale%20de%20FireWatch.png)
 
 ### 1. Couche d'ingestion – Apache Kafka
 
