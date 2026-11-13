@@ -280,6 +280,31 @@ Le premier socle de l'infrastructure Big Data est mis en place : cluster Docker,
 
 Le projet se poursuit avec le stockage distribué, les traitements Batch et Streaming, l'analyse des données et le développement des modèles de Machine Learning.
 
+Après l'archivage des données dans HDFS, le script batch/explore_data.py permet d'explorer et de vérifier l'historique des détections à l'aide d'Apache Spark.
+
+Les principales opérations réalisées sont :
+
+- *Chargement des données :* lecture des fichiers Parquet depuis HDFS (/raw/detections).
+- *Comptage des données :* calcul du nombre total de détections archivées.
+- *Exploration de la structure :* affichage du schéma et de quelques exemples de données.
+- *Statistiques descriptives :* analyse des valeurs de latitude, longitude, température de brillance et FRP.
+- *Analyse par pays et par année :* calcul du nombre de détections pour chaque pays et chaque année.
+- *Vérification des valeurs manquantes :* contrôle des colonnes pour détecter les données nulles.
+- *Détection des doublons :* identification des événements ayant le même event_id.
+- *Contrôle de qualité :* vérification des coordonnées géographiques, des valeurs FRP et des années et pays.
+
+*Résultats de l'exploration :*
+
+- Nombre total de lignes : 174 592.
+- Espagne : 129 391 détections.
+- Portugal :45 201 détections.
+- Valeurs manquantes : 0.
+- Identifiants dupliqués : 0.
+- Données invalides détectées : 0.
+
+Cette étape permet de comprendre la structure et la qualité des données avant de passer au nettoyage, au calcul des indicateurs et à la préparation des données pour le Machine Learning.
+
+
 ## 👥 Équipe
 
 Projet académique réalisé par une équipe de **3 étudiants** : Chaimae Boulaid/ Hassna ELbahmani/ Meryem Chamlali .
