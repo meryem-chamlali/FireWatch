@@ -156,6 +156,8 @@ services:
 
     volumes:
       - ./configs/hadoop:/opt/hadoop-conf:ro
+       - ../streaming:/opt/spark-apps
+      - ../batch:/opt/spark-batch-app
 
     environment:
       HADOOP_CONF_DIR: /opt/hadoop-conf
@@ -192,6 +194,8 @@ services:
 
     volumes:
       - ./configs/hadoop:/opt/hadoop-conf:ro
+       - ../streaming:/opt/spark-apps
+      - ../batch:/opt/spark-batch-app
 
     environment:
       HADOOP_CONF_DIR: /opt/hadoop-conf
@@ -228,6 +232,8 @@ services:
 
     volumes:
       - ./configs/hadoop:/opt/hadoop-conf:ro
+      - ../streaming:/opt/spark-apps
+      - ../batch:/opt/spark-batch-apps
 
     environment:
       HADOOP_CONF_DIR: /opt/hadoop-conf
